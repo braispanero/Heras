@@ -1,0 +1,1001 @@
+/*
+	Theme Name:     ROYAL - 8theme WordPress theme
+    Description:    Child version of Royal
+    Template:       ROYAL
+    Version:	    1.3
+    Author:		    Brais Fdez Panero
+	*/
+	
+@import url("estilos/style_Royal.css");
+
+/* = Personalización de los estilos de la plantilla
+-------------------------------------------------------------- */
+
+#sidebar
+{
+	float:left;
+	width:200px;
+}
+#main
+{
+	margin-left:200px;
+	width:1166px;
+}
+.wrapper
+{
+	width:200px;
+}
+
+#logotipo
+{
+	padding-top:50px;
+	width:200px;
+}
+
+/*
+	USO DE FUENTES
+*/
+@font-face 
+{
+  	font-family: "Roboto Thin";
+  	src: url("fonts/roboto/Roboto-Thin.ttf");
+}
+@font-face 
+{
+  	font-family: "Roboto Regular";
+  	src: url("fonts/roboto/Roboto-Regular.ttf");
+}
+@font-face 
+{
+  	font-family: "Roboto Light";
+  	src: url("fonts/roboto/Roboto-Light.ttf");
+}
+@font-face 
+{
+  	font-family: "Roboto Medium";
+  	src: url("fonts/roboto/Roboto-Medium.ttf");
+}
+@font-face 
+{
+  	font-family: "Roboto Slab Regular";
+  	src: url("fonts/Roboto Slab/RobotoSlab-Regular.ttf");
+}
+@font-face 
+{
+  	font-family: "Roboto Slab Bold";
+  	src: url("fonts/Roboto Slab/RobotoSlab-Bold.ttf");
+}
+
+/*
+	1.-	ESILOS DE LA BARRA LATERAL (SIDEBAR)
+		A.-	ESTILO PARA EL MENÚ DE IDIOMAS
+*/
+#menu_idiomas
+{
+	padding-left:60px;
+	padding-right:60px;
+	margin-bottom:-10px;
+	margin-top:25px;	
+	width:80px;
+}
+#idioma_sel
+{
+	height:26px;
+	width:80px;
+}
+#idioma
+{
+	float:left;
+	margin-right: 15px;
+}
+#idioma a
+{
+	font-size: 11px;
+	font-family:Roboto Regular;
+	color:#808080;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+#imagen
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/flecha_abajo.jpg);
+	background-repeat:no-repeat;
+	width:15px;
+	height:15px;
+	float:left;
+	background-position:0% 60%;
+	display:block;
+}
+#menu_idiomas:hover #imagen
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/flecha_arriba.jpg);
+	background-repeat:no-repeat;
+	width:15px;
+	height:15px;
+	float:left;
+	background-position:0% 60%;
+	display:block;
+}
+#menu_idiomas:hover #lista
+{
+	display:block;
+}
+#lista
+{
+	display:none;
+	margin-top:-18px;
+	width:80px;
+}
+#lista ul
+{
+	list-style-type:none;
+	padding:0px;
+	margin-bottom:0px;
+	margin-top:20px;
+}
+#lista ul li a
+{
+	display:block;
+	height:26px;
+	font-size: 11px;
+	font-family:Roboto Regular;
+	color:#808080;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+/*
+		B.-	ESTILO PARA EL MENÚ DE NAVEGACIÓN
+*/
+.menu-main-container 
+{  
+	text-transform:uppercase;
+	font-family:Roboto Regular;
+	padding-top:50px;
+	
+}
+.menu-main-container ul 
+{ 
+	list-style-type: none;
+}
+.menu-main-container
+{
+	padding-left:25px;
+}
+.menu-main-container ul li 
+{ 
+	width: 175px;
+}
+.menu-main-container > ul > li 
+{ 
+	height:28px;
+}
+.menu-main-container ul li a 
+{
+	display: block;
+	text-decoration: none;
+	color: #808080;
+	padding: 12px 0px 12px 0px;
+	position: relative;
+	font-size:14px;
+}
+.menu-main-container ul li:hover 
+{
+	position: relative;
+	color:#f9b204;
+	border-right: 5px solid #f9b204;
+}
+.menu-main-container ul li ul 
+{
+	display: none;
+}
+.menu-main-container ul li a:hover ul, .menu-main-container ul li:hover ul 
+{
+	display:block;
+	position:absolute;
+	left: 175px;
+}
+.menu-main-container ul li ul li a
+{
+	color: #000000;
+	display:block;
+	position:relative;
+	font-size:12px;
+	height:28px;
+	padding:0px;
+	padding-left:10px;
+}
+.menu-main-container ul li ul li
+{
+	background-color:#fae9cc;
+}
+.menu-main-container ul li ul li a:hover
+{
+	position: relative;
+}
+.menu-main-container ul li ul li:hover
+{
+	background-color: #b06d0d;
+	border-right: none;
+}
+.menu-main-container ul li ul li:hover a
+{
+	color: #ffffff;
+}
+.menu-main-container ul li a:hover ul li ul, .menu-main-container ul li:hover ul li ul 
+{
+	position:relative;
+	left:0px;
+	display:block;
+}
+.menu-main-container ul li ul li ul li a 
+{
+	background-color:#ffffff;
+	color:#000000 !important;
+	position:relative;
+}
+.menu-main-container ul li ul li ul li a:hover
+{
+	position:relative;
+	color:#b06d0d !important;
+	background-color:#ffffff;
+}
+
+/*
+		C.-	ESTILO PARA LAS REDES SOCIALES
+*/
+#redes_soc
+{
+	width:200px;
+	padding:400px 54px 0 54px;
+}
+#facebook
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/facebook.png);
+	background-repeat:no-repeat;
+	width:26px;
+	height:26px;
+	display:block;
+	float:left;
+	position:relative;
+	margin-right:7px;
+}
+#linkedin
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/linkedin.png);
+	background-repeat:no-repeat;
+	width:26px;
+	height:26px;
+	display:block;
+	float:left;
+	position:relative;
+	margin-right:7px;
+}
+#pinterest
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/pinterest.png);
+	background-repeat:no-repeat;
+	width:26px;
+	height:26px;
+	display:block;
+	float:left;
+	position:relative;
+}
+#facebook:hover
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/facebook_OVER.png);
+	background-repeat:no-repeat;
+	width:26px;
+	height:26px;
+	display:block;
+	float:left;
+	position:relative;
+	margin-right:7px;
+}
+#linkedin:hover
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/linkedin_OVER.png);
+	background-repeat:no-repeat;
+	width:26px;
+	height:26px;
+	display:block;
+	float:left;
+	position:relative;
+	margin-right:7px;
+}
+#pinterest:hover
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/pinterest_OVER.png);
+	background-repeat:no-repeat;
+	width:26px;
+	height:26px;
+	display:block;
+	float:left;
+	position:relative;
+}
+
+/*
+	2.-	ESTILOS PARA EL INDEX DE LA PÁGINA (MAIN)
+		A.-	ESTILO DEL SLIDE DE INICIO
+*/
+#inicio
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Imagen02.jpg);
+	background-repeat:no-repeat;
+	width:1166px;
+	height:632px;
+	text-align:center;
+	padding:200px 0 200px 0;
+}
+#inicio h1
+{
+	padding:0;
+	margin:0;
+	font-family:Roboto Thin;
+	font-size:92px;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-weight:inherit;
+}
+#inicio a
+{
+	font-family:Roboto Thin;
+	font-size:22px;
+	color:#ffffff;
+	text-transform:uppercase;
+	padding:0 10px 0 10px;
+}
+#inicio button
+{
+	font-family:Roboto Thin;
+	background-color:#333333;
+	border:1px solid #ffffff !important;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:13px;
+	padding:5px 25px 5px 25px;
+	font-weight:bold;
+	margin-top:50px;
+	margin-left:10px;
+}
+#inicio #flecha
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Flecha.png);
+	background-repeat:no-repeat;
+	width:39px;
+	height:39px;
+	float:right;
+	padding-right:59px;
+	margin-left:-59px;
+}
+#inicio #flecha:hover
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Flecha_OVER.png);
+	background-repeat:no-repeat;
+	width:39px;
+	height:39px;
+	float:right;
+	padding-right:20px;
+	margin-left:-59px;
+}
+
+/*
+		B.-	ESTILO DEL DIV DE HERAS
+*/
+#heras
+{
+	width:1050px;
+	padding:0;
+	margin:115px 0 80px 0;
+	padding:0 50px 0 66px;
+}
+#heras h1
+{
+	padding:0;
+	margin-bottom:19px;
+	font-family:Roboto Light;
+	font-size:48px;
+	color:#000000;
+	text-transform:uppercase;
+	font-weight:lighter;
+}
+#heras h2
+{
+	padding:0;
+	margin-bottom:19px;
+	font-family:Roboto Light;
+	font-size:24px;
+	color:#565656;
+	font-weight:lighter;
+	text-transform:inherit;
+}
+#heras #imagen
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/subrayado_titulos.png);
+	background-repeat:no-repeat;
+	width:58px;
+	height:11px;
+	display:block;
+	margin-bottom:28px;
+	float:left;
+}
+#heras a
+{
+	font-family:Roboto Light;
+	font-size:14px;
+	color:#565656;
+	display:block;
+	float:left;
+	margin-bottom:55px;
+}
+#datos
+{
+	margin:55px 25px 65px 0;
+}
+#datos #foto1
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Foto01.jpg);
+	background-repeat:no-repeat;
+	width:369px;
+	height:413px;
+	display:block;
+	float:left;
+	margin-right:15px;
+}
+#datos #foto2
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Foto02.jpg);
+	background-repeat:no-repeat;
+	width:301px;
+	height:413px;
+	display:block;
+	float:left;
+	margin-right:25px;
+}
+#datos h1
+{
+	padding:0;
+	margin-bottom:20px;
+	font-family:Roboto Medium;
+	font-size:14px;
+	color:#252525;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+#datos h2
+{
+	padding:0;
+	margin:0;
+	font-family:Roboto Slab Regular;
+	font-size:11px;
+	color:#b06d0d;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+#datos a
+{
+	font-size:11px;
+	font-weight:bold;
+	margin-bottom:20px;
+	float:inherit;
+}
+#datos a:link
+{
+	font-size:10px;
+	color:#aaaaaa;
+	text-decoration:underline;
+	font-weight:normal;
+	margin-bottom:35px;
+}
+#heras button
+{
+	height:33px;
+	border:0.5px solid #cccccc !important;
+	background-color:#ffffff;
+	color:#565656 !important;
+	text-transform:uppercase;
+	font-size:11px;
+	font-family:Roboto Light;
+	font-weight:bold;
+	margin-left:400px;
+}
+
+/*
+		C.- ESTILO DEL DIV DE COLECCIÓN
+*/
+#coleccion
+{
+	width:1050px;
+	padding:0;
+	margin:100px 0 110px 0;
+	padding:0 50px 0 66px;
+}
+#coleccion h1
+{
+	padding:0;
+	margin-bottom:19px;
+	font-family:Roboto Light;
+	font-size:48px;
+	color:#000000;
+	text-transform:uppercase;
+	font-weight:lighter;
+}
+#coleccion h2
+{
+	padding:0;
+	margin-bottom:19px;
+	font-family:Roboto Light;
+	font-size:24px;
+	color:#565656;
+	font-weight:lighter;
+	text-transform:inherit;
+}
+#coleccion #imagen
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/subrayado_titulos.png);
+	background-repeat:no-repeat;
+	width:58px;
+	height:11px;
+	display:block;
+	margin-bottom:28px;
+	float:none;
+}
+#coleccion a
+{
+	font-family:Roboto Light;
+	font-size:14px;
+	color:#565656;
+	display:block;
+	margin-bottom:55px;
+}
+#coleccion table img
+{
+	max-height:250px;
+	margin-right:50px;
+}
+#coleccion table h1
+{
+	font-family:Roboto Medium;
+	font-size:16px;
+	color:#000000;
+	font-weight:bolder;
+	margin:0;
+	padding:0;
+	padding-top:20px;
+}
+#coleccion table a
+{
+	font-family:Roboto Ligth;
+	font-size:13px;
+	color:#767676;
+	margin:0;
+	padding:0;
+}
+#coleccion button
+{
+	margin:111px 110px 111px 110px;
+	position:absolute;
+	border:2px solid #FFBF00;
+	background-color:#333333;
+	color:#FFBF00;
+	text-transform:uppercase;
+	padding:3px 20px 3px 20px;
+	font-weight:bolder;
+	font-family:Roboto Medium;
+	font-size:15px;
+	display:none;
+}
+#piedra:hover button, #obra_publica:hover button, #piezas:hover button, #piedra:hover #oculto, #obra_publica:hover #oculto, #piezas:hover #oculto
+{
+	display:inherit;
+}
+#coleccion #oculto
+{
+	position:absolute;
+	display:none;
+	max-height:222px !important;
+}
+
+/*
+		D.- ESTILO DEL SLIDE DE PIEZAS ÚNICAS
+*/
+#piezas_unicas
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Piedra-arenisca03.-Isla-VII.-50-x-50-x-12-.jpg);
+	background-repeat:no-repeat;
+	display:block;
+	width:1166px;
+	height:300px;
+	background-position:center;
+}
+#opacidad
+{
+	background-color: #b06d0d;
+	width:1166px;
+	height:300px;
+	text-align:center;
+	opacity: 0.65;
+	padding:75px 350px 75px 350px;
+}
+#piezas_unicas h1
+{
+	font-family:Robot Medium;
+	font-size:14px;
+	color:#FFB900;
+	text-transform:uppercase;
+	padding:0;
+	margin:0 0 15px 0;
+}
+#piezas_unicas h2
+{
+	font-family:Roboto Medium;
+	font-size:18px;
+	color:#ffffff;
+	padding:0;
+	margin:0 0 5px 0;
+}
+#piezas_unicas #imagen
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/forma_blanca1.png);
+	background-repeat:no-repeat;
+	width:57px;
+	height:8px;
+	display:block;
+	margin-left:205px;
+	margin-bottom:5px;
+	float:none;
+}
+#piezas_unicas a
+{
+	font-family:Roboto Light;
+	font-size:13px;
+	color:#ffffff;
+}
+#piezas_unicas button
+{
+	font-family:Roboto Medium;
+	bor 1px solid #ffffff;
+	font-size:14px;
+	color:#ffffff;
+	background-color:#333333;
+	text-transform:uppercase;
+	padding:3px 25px 3px 25px;
+	margin-top:30px;
+}
+
+/*
+		E.- ESTILO DEL CATÁLOGO DE LA TIENDA ONLINE
+*/
+#tienda
+{
+	width:1050px;
+	padding:0;
+	margin:100px 0 100px 0;
+	padding:0 50px 0 66px;
+}
+#tienda h1
+{
+	padding:0;
+	margin-bottom:19px;
+	font-family:Roboto Light;
+	font-size:48px;
+	color:#000000;
+	text-transform:uppercase;
+	font-weight:lighter;
+}
+#tienda h2
+{
+	padding:0;
+	margin-bottom:19px;
+	font-family:Roboto Light;
+	font-size:24px;
+	color:#565656;
+	font-weight:lighter;
+	text-transform:inherit;
+}
+#tienda #imagen
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/subrayado_titulos.png);
+	background-repeat:no-repeat;
+	width:58px;
+	height:11px;
+	display:block;
+	margin-bottom:28px;
+	float:left;
+}
+#tienda a
+{
+	font-family:Roboto Light;
+	font-size:14px;
+	color:#565656;
+	display:block;
+	float:left;
+	margin-bottom:55px;
+}
+#tienda #menu
+{
+	text-align:center;
+	margin:0 368px 35px 368px;
+}
+#tienda #menu ul
+{
+	display:inherit;
+	list-style-type:none;
+}
+#tienda #menu ul li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+}
+#tienda #menu ul li a:hover
+{
+	background-color:#000000;
+	color:#ffffff;
+}
+#tienda table
+{
+	float:left;
+}
+#tienda #alabastro1
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Alabastro01.jpg);
+}
+#tienda #alabastro2
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Alabastro03.-Escondite.-40x27x25.jpg);
+}
+#tienda #caliza1
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Caliza01.-E.B.D.B.-56x28x22.jpg);
+}
+#tienda #arenisca1
+{
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2014/10/Arenisca02.-Sin-titulo.-40x25x25.jpg);
+}
+#tienda #caliza2
+{
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2014/10/Caliza01.-Sin-titulo.-52x37x35.jpg);
+}
+#tienda #caliza3
+{
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2014/10/Marmol-macael01.-Nice.-18x20x15.jpg);
+}
+#tienda #marmol
+{
+	background-image: url(http://localhost/wordpress//wp-content/uploads/2014/10/Marmol-macael02.-Vertical.-75x10x10.jpg);
+}
+#tienda #alabastro3
+{
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2014/10/Alabastro02.-Equilibrio.-55x26x26..jpg);
+}
+#tienda #arenisca2
+{
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2014/10/Piedra-arenisca03.-Isla-VII.-50-x-50-x-12-1.jpg);
+}
+#tienda #alabastro1, #tienda #alabastro2, #tienda #caliza1, #tienda #arenisca1, #tienda #caliza2, #tienda #caliza3, #tienda #marmol, #tienda #alabastro3, #tienda #arenisca2
+{
+	width:300px;
+	height:250px;
+	background-position:center;
+	background-repeat:no-repeat;
+	padding:0;
+	margin:0 15px 0 0;
+}
+#tienda table h1
+{
+	font-family:Roboto Slab Bold;
+	font-size:13px;
+	color:#b06d0d;
+	text-transform:uppercase;
+	padding:0;
+	margin:25px 0 13px 0;
+}
+#tienda table h2
+{
+	font-family:Roboto Light;
+	font-size:16px;
+	color:#000000;
+	text-transform:uppercase;
+	display:inline;
+	padding:0;
+	margin-bottom:50px;
+}
+#tienda table a
+{
+	font-family:Roboto Medium;
+	font-size:17px;
+	color:#000000;
+	font-weight:bolder;
+	float:right;
+	margin-right:15px;
+}
+#tienda #oculto
+{
+	position:absolute;
+	display:none;
+	width:300px;
+	height:250px;
+}
+#tienda button
+{
+	margin:111px 108px 111px 108px;
+	position:absolute;
+	border:2px solid #FFBF00;
+	background-color:#333333;
+	color:#FFBF00;
+	text-transform:uppercase;
+	padding:3px 20px 3px 20px;
+	font-weight:bolder;
+	font-family:Roboto Medium;
+	font-size:15px;
+	display:none;
+}
+#hover:hover #oculto, #hover:hover button
+{
+	display:inherit;
+}
+
+/*
+		F.- ESTILO DEL DIV DEL BLOG
+*/
+#blog
+{
+	float:left;	
+	width:1050px;
+	padding:0;
+	margin:100px 0 100px 0;
+	padding:0 50px 0 66px;
+	background-color:#fffcf7;
+}
+#blog h1
+{
+	padding:0;
+	margin-bottom:19px;
+	font-family:Roboto Light;
+	font-size:48px;
+	color:#000000;
+	text-transform:uppercase;
+	font-weight:lighter;
+}
+#blog h2
+{
+	padding:0;
+	margin-bottom:19px;
+	font-family:Roboto Light;
+	font-size:24px;
+	color:#565656;
+	font-weight:lighter;
+	text-transform:inherit;
+}
+#blog #imagen
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/subrayado_titulos.png);
+	background-repeat:no-repeat;
+	width:58px;
+	height:11px;
+	display:block;
+	margin-bottom:28px;
+	float:none;
+}
+#blog a
+{
+	font-family:Roboto Light;
+	font-size:14px;
+	color:#565656;
+	display:block;
+	margin-bottom:55px;
+}
+#blog #fuerza_mar1
+{
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2014/10/Marmol-marfil02.-La-fuerza-del-mar.-450x150x90.jpg);
+}
+#blog #fuerza_mar2
+{
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2014/10/Marmol-marfil09.-La-fuerza-del-mar.-450x150x90.jpg);
+}
+#blog #tierra_mar
+{
+	background-image: url(http://localhost/wordpress/wp-content/uploads/2014/10/Tierra-y-mar_noche02.jpg);
+}
+#blog #fuerza_mar1, #blog #fuerza_mar2, #blog #tierra_mar
+{
+	width:300px;
+	height:250px;
+	background-position:center;
+	background-repeat:no-repeat;
+	padding:0;
+	margin:0 15px 0 0;
+	float:left;
+}
+#blog table h1
+{
+	font-family:Roboto Regular;
+	font-size:13px;
+	color:#f9b204;
+	text-transform:uppercase;
+	margin:20px 0 23px 0;
+}
+#blog table h2
+{
+	font-family:Roboto Slab Regular;
+	font-size:16px;
+	color:#000000;
+	text-transform:uppercase;
+	margin:0 0 15px 0;
+}
+#blog table h3
+{
+	font-family:Roboto Light;
+	font-size:13px;
+	color:#767676;
+	margin:0 0 10px 0;
+}
+#blog #linea
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/Linea.jpg);
+	background-repeat:no-repeat;
+	width:72px;
+	height:4px;
+	display:block;
+	margin-bottom:23px;
+}
+#blog table a
+{
+	font-family:Roboto Light;
+	font-size:13px;
+	color:#393939;
+	padding:0;
+	margin:0 15px 0 0;
+}
+#blog #oculto
+{
+	position:absolute;
+	display:none;
+	width:300px;
+	height:250px;
+}
+#blog button
+{
+	margin:111px 88px 111px 88px;
+	position:absolute;
+	border:2px solid #FFBF00;
+	background-color:#333333;
+	color:#FFBF00;
+	text-transform:uppercase;
+	padding:3px 20px 3px 20px;
+	font-weight:bolder;
+	font-family:Roboto Medium;
+	font-size:15px;
+	display:none;
+}
+#hover:hover #oculto, #hover:hover button
+{
+	display:inherit;
+}
+#blog #flecha_izda
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/flecha_izq.png);
+	background-repeat:no-repeat;
+	width:39px;
+	height:38px;
+	float:left;
+	margin:-375px 0 0 -50px;
+}
+#blog #flecha_dcha
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/flecha_dcha.png);
+	background-repeat:no-repeat;
+	width:39px;
+	height:38px;
+	float:right;
+	margin:-375px -95px 0 0;
+}
+#blog #flecha_izda:hover
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/flecha_izqOVER.png);
+}
+#blog #flecha_dcha:hover
+{
+	background-image:url(http://localhost/wordpress/wp-content/uploads/2014/10/flecha_dchaOVER.png);
+}
